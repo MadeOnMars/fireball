@@ -1,0 +1,116 @@
+html,
+body {
+    height: 100%;
+    width:100%;
+    margin:0;
+    position:fixed;
+    overflow:hidden;
+    background-color: #d5b050;
+}
+
+#fork {
+  position:absolute;
+  z-index:1000;
+  top:0;
+  right:0;
+}
+
+#rocks {
+  position:absolute;
+}
+
+.rock1 {
+  position: absolute;
+	background: #e9c058;
+	-webkit-clip-path: polygon(12% 26%, 20% 15%, 35% 11%, 48% 17%, 64% 27%, 73% 44%, 73% 63%, 62% 77%, 37% 83%, 14% 84%, 4% 71%, 2% 45%);
+  clip-path: polygon(12% 26%, 20% 15%, 35% 11%, 48% 17%, 64% 27%, 73% 44%, 73% 63%, 62% 77%, 37% 83%, 14% 84%, 4% 71%, 2% 45%);
+}
+
+.rock2 {
+  position: absolute;
+	background: #e9c058;
+	-webkit-clip-path: polygon(12% 26%, 20% 15%, 35% 11%, 48% 17%, 64% 27%, 73% 44%, 73% 63%, 62% 77%, 37% 83%, 14% 84%, 4% 71%, 2% 45%);
+  clip-path: polygon(12% 26%, 20% 15%, 35% 11%, 48% 17%, 64% 27%, 73% 44%, 73% 63%, 62% 77%, 37% 83%, 14% 84%, 4% 71%, 2% 45%);
+}
+
+.rock3 {
+  position: absolute;
+	background: #e9c058;
+	-webkit-clip-path: polygon(29% 33%, 39% 27%, 60% 25%, 74% 28%, 79% 40%, 75% 54%, 65% 64%, 53% 73%, 31% 86%, 33% 70%, 28% 56%);
+  clip-path: polygon(29% 33%, 39% 27%, 60% 25%, 74% 28%, 79% 40%, 75% 54%, 65% 64%, 53% 73%, 31% 86%, 33% 70%, 28% 56%);
+}
+
+.rock4 {
+  position: absolute;
+	background: #e9c058;
+	-webkit-clip-path: polygon(23% 72%, 13% 57%, 12% 32%, 30% 16%, 46% 12%, 66% 12%, 87% 20%, 98% 41%, 95% 62%, 88% 74%, 53% 83%);
+  clip-path: polygon(23% 72%, 13% 57%, 12% 32%, 30% 16%, 46% 12%, 66% 12%, 87% 20%, 98% 41%, 95% 62%, 88% 74%, 53% 83%);
+}
+
+#fireball {
+  -webkit-transform: rotate(135deg);
+  position: absolute;
+  overflow: hidden;
+  z-index: 100;
+  width: 15%;
+  border-radius: 10000px;
+  left:100%;
+}
+#fireball:before {
+  content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+#background {
+  position: absolute;
+  top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  background: yellow;
+}
+
+.drop {
+  position: absolute;
+	background: rgba(255, 100, 0, 1);
+	border-radius: 5000px;
+  left:50%;
+  top:50%;
+}
+
+.part {
+  position: absolute;
+  margin-right: 0px;
+  top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  background: rgba(255, 100, 0, 0.1);
+}
+
+footer {
+  position:absolute;
+  z-index:1000;
+  left:0;
+  bottom:0;
+  font-family:'Lato', sans-serif;
+  letter-spacing:3px;
+  font-size:14px;
+  display:block;
+  width:100%;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+footer a {
+  text-decoration:none;
+  color:#333333;
+}
+
+footer a svg {
+  width:10%;
+  max-width:50px;
+  min-width:40px;
+  display:inline-block;
+}
